@@ -47,20 +47,27 @@ The request must be in JSON format and include the following fields:
   ]
 }
 
-npm install
-npm start
+### Request Body
+The request must be in JSON format and include the following fields:
 
-@@@Request Body
+- `fullname`: An object containing the user's full name.
+- `firstname`: The first name of the user (string, required).
+- `lastname`: The last name of the user (string, required).
+- `email`: The email address of the user (string, required).
+- `password`: The password for the user account (string, required).
 
-The request body should be in JSON format and include the following fields:
 
 
-- 'fullname' (object);
--lastname' (string,optional): user's last name(minimum 3 characters).
+### Example response
 
--'email'(string,required): Users's email address (must be)
+- 'user' (object):
+- `firstname`: The first name of the user (string, required).
+- `lastname`: The last name of the user (string, required).
+- `email`: The email address of the user (string, required).
+- `token`: The authentication token for the user (string, required).
 
--'password'(string,required): user's password(minimum 6 characters).
+
+
 
 
 
